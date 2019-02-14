@@ -4,6 +4,7 @@ mypy
 pytest
 
 # Application packages.
+awscli
 torch
 torchtext
 flask

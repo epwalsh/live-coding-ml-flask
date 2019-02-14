@@ -1,0 +1,53 @@
+# Environment files.
+env.*.txt
+**/*.access.txt
+**/*.env
+
+# Python junk.
+**/*.pyc
+**/*.pyo
+**/*.so
+**/.ipynb_checkpoints
+**/.cache
+**/__pycache__
+**/.mypy_cache
+**/.pytest_cache
+**/.coverage
+
+# Test files.
+# pytest.ini
+# **/test
+
+# Mac OS X stuff.
+**/.DS_Store
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
+
+# Vim swap files.
+**/*.swo
+**/*.swp
+**/*~
+
+# Model files.
+**/*.pt
+**/*.model
+**/*.ckpt
+**/*.crfsuite
+**/*.checkpoint
+**/*.tar.gz
+**/*.hdf5
+.vector_cache
+
+# Git.
+.git*
+
+# Virtualenv
+venv
+
+# Docs
+**/doc
+
+# Tests
+petesapp/test

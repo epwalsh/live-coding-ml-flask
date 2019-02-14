@@ -102,3 +102,14 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Environment files
+*.env
+access.txt
+
+# Scratch files.
+tmp.py
+scratch.py
+
+# cache from ML models
+.vector_cache

@@ -16,6 +16,7 @@ Bonus:
 
 1. Setup our development environment
   - .gitignore
+  - .dockerignore
   - helper Make commands
   - pylint, mypy, unit test framework
   - environment files

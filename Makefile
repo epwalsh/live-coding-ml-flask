@@ -1,7 +1,6 @@
 app = petesapp
 test := $(app)
 env = local.env
-access_file = access.txt
 image = petesapp
 tag = latest
 
@@ -29,4 +28,4 @@ docker-build :
 
 .PHONY : docker-run
 docker-run :
-	docker run -p 5000:5000 --env-file $(access_file) --rm $(image):$(tag)
+	docker run -p 5000:5000 --env-file $(env) --rm $(image):$(tag)

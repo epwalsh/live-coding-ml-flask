@@ -26,15 +26,12 @@ RUN adduser --system --no-create-home --shell /bin/false --group --disabled-logi
 
 WORKDIR /opt/python/app
 
-# Install application dependencies.
 COPY requirements.txt requirements.txt
 RUN pip --no-cache-dir install -r requirements.txt
 
-# Copy nginx, uwsgi, and supervisord configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY supervisord.conf /etc/supervisord.conf
 
-# Copy entrypoint into place.
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 

@@ -1,5 +1,5 @@
-import json
 import logging
+import json
 
 from flask import Flask, Response, request
 
@@ -8,12 +8,14 @@ from petesapp.webserver.auth import authenticate_token
 
 
 logging.basicConfig(level=logging.INFO)
+
+
 application = Flask(__name__)  # pylint: disable=invalid-name
 
 
 @application.route("/health", methods=["GET"], strict_slashes=False)
 def health_check():
-    return Response("So health right now! Thanks for checking :)", status=200)
+    return Response("So healthy RN! Thanks for checking :)", status=200)
 
 
 @application.route("/glove", methods=["POST"], strict_slashes=False)

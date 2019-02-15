@@ -11,7 +11,7 @@ lint :
 
 .PHONY : typecheck
 typecheck :
-	@echo "Running typechecks (mypy):"
+	@echo "Running typechecker (mypy):"
 	@mypy $(app) --ignore-missing-imports
 
 .PHONY : unit-tests

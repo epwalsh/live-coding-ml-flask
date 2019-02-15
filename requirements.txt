@@ -1,0 +1,10 @@
+# Testing packages.
+pylint
+mypy
+pytest
+
+# Application packages.
+torch
+torchtext
+flask
+gunicorn
